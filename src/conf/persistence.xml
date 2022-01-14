@@ -8,6 +8,7 @@
     <class>models.Category</class>
     <class>models.Group1</class>
     <class>models.Role</class>
+    <class>models.Family</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
   </persistence-unit>
 </persistence>
