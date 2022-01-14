@@ -6,7 +6,6 @@
     <class>models.Item</class>
     <class>models.User</class>
     <class>models.Category</class>
-    <class>models.Group1</class>
     <class>models.Role</class>
     <class>models.Family</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
