@@ -1,10 +1,8 @@
 package dataaccess;
 
 import java.util.List;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityTransaction;
-import models.Family;
-import models.User;
+import javax.persistence.*;
+import models.*;
 
 /**
  * Database access file that manages data for the families.
