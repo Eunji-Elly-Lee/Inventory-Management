@@ -7,7 +7,7 @@ import models.*;
 /**
  * Database access file that manages data for the items.
  * It allows calling a particular item or a list of all items
- * or inserting, updating, and deleting the categories.
+ * or inserting, updating, and deleting the items.
  * @author Eunji Elly Lee
  * @version Jan 13, 2022
  */
