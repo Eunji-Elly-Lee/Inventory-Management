@@ -1,3 +1,9 @@
+<%-- 
+    Document   : The login page where a user enters their email and password and logs into the web application.
+    Created on : Jan 16, 2022
+    Author     : Eunji Elly Lee
+--%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
