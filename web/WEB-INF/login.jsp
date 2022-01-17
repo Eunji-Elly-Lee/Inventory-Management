@@ -1,6 +1,6 @@
 <%-- 
     Document   : The login page where a user enters their email and password and logs into the web application.
-    Created on : Jan 16, 2022
+    Created on : Jan 17, 2022
     Author     : Eunji Elly Lee
 --%>
 
@@ -21,7 +21,7 @@
     </head>
     <body>
         <div class="p-4 bg-dark">
-            <h1><a href="login" class="home">Home nVentory</a></h1>
+            <h1><a href="login" class="home">Home Inventory</a></h1>
         </div>
         
         <div class="p-4" id="wapper">
