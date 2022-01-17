@@ -17,7 +17,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
                 integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link media="all" type="text/css" rel="stylesheet" href="./css/css1.css">
-        <title>Home nVentory</title>
+        <title>Inventory Management</title>
     </head>
     <body>
         <div class="p-4 bg-dark">
@@ -37,7 +37,7 @@
                     <input type="password" class="form-control" id="password" name="password">
                 </div>
                 <div>
-                    <input type="submit" value="Log in" class="formButton2">
+                    <input type="submit" value="Log in" class="formButton1">
                 </div>
             </form>
                 
