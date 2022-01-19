@@ -1,6 +1,7 @@
 <%-- 
     Document   : The login page where a user enters their email and password and logs into the web application.
-    Created on : Jan 17, 2022
+                 A User can also create a new account or set up a new password instead of a forgotten one here.
+    Created on : Jan 18, 2022
     Author     : Eunji Elly Lee
 --%>
 
@@ -51,6 +52,13 @@
                 <c:if test="${nonActiveUser}">
                     <p>Sorry, your account is non-active.</p>
                 </c:if>                
+            </div>
+                
+            <div class="my-3">
+                <a href="registration">Create new account</a>
+            </div>
+            <div class="my-3">
+                <a href="reset">Forgot password</a>
             </div>
         </div>
     </body>
