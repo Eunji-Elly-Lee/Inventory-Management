@@ -8,7 +8,7 @@ import models.User;
  * The java file of a service layer for managing all activities
  * related to an account.
  * @author Eunji Elly Lee
- * @version Jan 15, 2022
+ * @version Jan 20, 2022
  */
 public class AccountService {
     public User login(String email, String password) {
