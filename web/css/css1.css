@@ -14,6 +14,10 @@ a:hover {
     color: #088A85;
 }
 
+th, td {
+  vertical-align: middle;
+}
+
 .home {
     margin-left: 5%;
     color: #FAFAFA;
@@ -32,7 +36,7 @@ a:hover {
     padding-top: 4px;
 }
 
-#email, #password {
+#email, #password, #newCategory, #newItem, #newPrice, #editCategory, #editItem, #editPrice{
     width: 300px;
     display: inline-block;
 }
@@ -47,13 +51,27 @@ a:hover {
     margin-bottom: 8px
 }
 
+.formButton2 {
+    width: 81px;
+    margin-bottom: 15px
+}
+
+.deleteImg {
+    margin-left: -5px;
+}
+
+.editImg {
+    margin-left: -12px;
+}
+
 @media screen and (min-width: 576px) {    
     #wapper {        
         width: 81%;
         margin: 0 auto;
     }
     
-    #email, #password, #newEmail, #newPassword, #newFirstName, #newLastName, #newFamily {
+    #email, #password, #newEmail, #newPassword, #newFirstName, #newLastName, #newFamily,
+    #newCategory, #newItem, #newPrice, #editCategory, #editItem, #editPrice {
         width: 340px;
     }
 }
