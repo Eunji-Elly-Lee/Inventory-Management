@@ -7,7 +7,7 @@ import models.*;
 /**
  * The java file of a service layer for managing all activities related to an account.
  * @author Eunji Elly Lee
- * @version Jan 28, 2022
+ * @version Feb 2, 2022
  */
 public class AccountService {
     public User login(String email, String password) {
@@ -61,6 +61,28 @@ public class AccountService {
         user.setUuid(uuid);
         
         userDB.insert(user);
+    }
+    
+    public void updateUser(String email, boolean active, String firstName, String lastName,
+            String password, int familyID, int roleID) throws Exception {
+        FamilyDB familyDB = new FamilyDB();
+        Family family = familyDB.get(familyID);
+        
+        RoleDB roleDB = new RoleDB();
+        Role role = roleDB.get(roleID); 
+        
+        UserDB userDB = new UserDB();
+        User beforeUser = userDB.get(email);
+        User afterUser = userDB.get(email);
+        
+        afterUser.setActive(active);
+        afterUser.setFirstName(firstName);
+        afterUser.setLastName(lastName);
+        afterUser.setPassword(password);
+        afterUser.setFamily(family);
+        afterUser.setRole(role);
+        
+        userDB.update(beforeUser, afterUser);
     }
     
     public void registerAccount(String email, String firstName, String lastName,
