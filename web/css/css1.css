@@ -36,12 +36,14 @@ th, td {
     padding-top: 4px;
 }
 
-#email, #password, #newCategory, #newItem, #newPrice, #editCategory, #editItem, #editPrice{
+#email, #password, #newCategory, #newItem, #newPrice, #editCategory, #editItem, #editPrice {
     width: 300px;
     display: inline-block;
 }
 
-#newEmail, #newPassword, #newFirstName, #newLastName, #newFamily {
+#userEmail, #family, #userPassword, #firstName, #lastName, #newEmail, #newPassword, #newFirstName,
+#newLastName, #newFamily, #newRole, #editEmail, #editPassword, #editFirstName, #editLastName,
+#editFamily, #editRole {
     width: 295px;
     display: inline-block;
 }
@@ -64,14 +66,30 @@ th, td {
     margin-left: -12px;
 }
 
+.notice {
+    text-align: center;
+    border: 2px solid #0B615E;
+    border-radius: 8px;
+}
+
+.warning {
+    width: 92%;
+}
+
+.undoForm {
+    display: inline;
+}
+
 @media screen and (min-width: 576px) {    
     #wapper {        
         width: 81%;
         margin: 0 auto;
     }
     
-    #email, #password, #newEmail, #newPassword, #newFirstName, #newLastName, #newFamily,
-    #newCategory, #newItem, #newPrice, #editCategory, #editItem, #editPrice {
+    #email, #password, #newCategory, #newItem, #newPrice, #editCategory, #editItem, #editPrice,
+    #userEmail, #family, #userPassword, #firstName, #lastName, #newEmail, #newPassword, #newFirstName,
+    #newLastName, #newFamily, #newRole, #editEmail, #editPassword, #editFirstName, #editLastName,
+    #editFamily, #editRole {
         width: 340px;
     }
 }
