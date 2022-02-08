@@ -11,7 +11,7 @@ import services.AccountService;
 /**
  * The Servlet for the admin page.
  * @author Eunji Elly Lee
- * @version Feb 4, 2022
+ * @version Feb 7, 2022
  */
 public class AdminServlet extends HttpServlet {
     @Override
@@ -35,7 +35,7 @@ public class AdminServlet extends HttpServlet {
             if(user.getRole().getRoleId() == 1) {                
                 getServletContext().getRequestDispatcher("/WEB-INF/sysAdmin.jsp").forward(request,response);
             } else if(user.getRole().getRoleId() == 3) {
-                getServletContext().getRequestDispatcher("/WEB-INF/comAdmin.jsp").forward(request,response);
+                getServletContext().getRequestDispatcher("/WEB-INF/famAdmin.jsp").forward(request,response);
             }
         } catch(Exception ex) {
             Logger.getLogger(AdminServlet.class.getName()).log(Level.SEVERE, null, ex);
@@ -204,7 +204,7 @@ public class AdminServlet extends HttpServlet {
             if(user.getRole().getRoleId() == 1) {                
                 getServletContext().getRequestDispatcher("/WEB-INF/sysAdmin.jsp").forward(request,response);
             } else if(user.getRole().getRoleId() == 3) {
-                getServletContext().getRequestDispatcher("/WEB-INF/comAdmin.jsp").forward(request,response);
+                getServletContext().getRequestDispatcher("/WEB-INF/famAdmin.jsp").forward(request,response);
             }
         } catch(Exception ex) {
             Logger.getLogger(AdminServlet.class.getName()).log(Level.SEVERE, null, ex);
