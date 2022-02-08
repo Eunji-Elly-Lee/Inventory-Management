@@ -1,7 +1,7 @@
 <%-- 
-    Document   : The inventory page where a user enters their email and password and logs into the web application.
-                 A User can also create a new account or set up a new password instead of a forgotten one here.
-    Created on : Feb 1, 2022
+    Document   : The inventory page where a user manages their items.
+                 The User can add a new item, call, edit, and delete an item.
+    Created on : Feb 7, 2022
     Author     : Eunji Elly Lee
 --%>
 
