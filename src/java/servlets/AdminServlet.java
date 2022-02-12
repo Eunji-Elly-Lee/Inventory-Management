@@ -11,7 +11,7 @@ import services.AccountService;
 /**
  * The Servlet for the admin page.
  * @author Eunji Elly Lee
- * @version Feb 7, 2022
+ * @version Feb 11, 2022
  */
 public class AdminServlet extends HttpServlet {
     @Override
@@ -84,8 +84,7 @@ public class AdminServlet extends HttpServlet {
                         
                         if(foundEmail) {
                             request.setAttribute("failedAdd", true);
-                        } else {
-                            
+                        } else {                            
                             String path = getServletContext().getRealPath("/WEB-INF");
                             String url = request.getRequestURL().toString();
                             accountService.registerAccount(newEmail, newFirstName, newLastName, newPassword,
@@ -171,14 +170,20 @@ public class AdminServlet extends HttpServlet {
                     break;
                 case "deleteUser":
                     String pointedUserEmail = request.getParameter("pointedUser");
-                    User deletedUser = accountService.getUser(pointedUserEmail);
-                    accountService.deleteUser(pointedUserEmail);
                     
-                    session.setAttribute("temporaryUser", deletedUser);
-                    request.setAttribute("deleteUserName", deletedUser.getFirstName());
-                    request.setAttribute("userForUndo", deletedUser);
-                    request.setAttribute("deletedUser", true);
-                    request.setAttribute("isNotEditing", true);    
+                    if(pointedUserEmail.equals(email)) {
+                        request.setAttribute("cannotDeleting", true);
+                    } else {
+                        User deletedUser = accountService.getUser(pointedUserEmail);
+                        accountService.deleteUser(pointedUserEmail);
+
+                        session.setAttribute("temporaryUser", deletedUser);
+                        request.setAttribute("deleteUserName", deletedUser.getFirstName());
+                        request.setAttribute("userForUndo", deletedUser);
+                        request.setAttribute("deletedUser", true);
+                        request.setAttribute("isNotEditing", true);
+                    }
+                        
                     break;
                 case "undo":                    
                     User temporaryUser = (User) session.getAttribute("temporaryUser");
