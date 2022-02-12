@@ -1,7 +1,7 @@
 <%-- 
     Document   : The system administrator page where a user whoes role is an administrator manages user's accounts.
                  The User can create a new account, call, edit, and delete an acount.
-    Created on : Feb 7, 2022
+    Created on : Feb 11, 2022
     Author     : Eunji Elly Lee
 --%>
 
@@ -131,6 +131,11 @@
             <c:if test="${updatedUser}">
                 <div class="mt-3 mx-2 p-2 notice">
                     <span>User &quot;${updateUserName}&quot; has successfully been updated.</span>
+                </div>
+            </c:if>
+            <c:if test="${cannotDeleting}">
+                <div class="mt-3 mx-2 p-2 notice">
+                    <span>Sorry, cannot delete your own account.</span>
                 </div>
             </c:if>
             <c:if test="${deletedUser}">
