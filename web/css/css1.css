@@ -36,7 +36,8 @@ th, td {
     padding-top: 4px;
 }
 
-#email, #password, #newCategory, #newItem, #newPrice, #editCategory, #editItem, #editPrice {
+#email, #password, #newCategory, #newItem, #newPrice, #editCategory, #editItem, #editPrice,
+#newFamilyName, #editFamilyName {
     width: 300px;
     display: inline-block;
 }
@@ -89,7 +90,7 @@ th, td {
     #email, #password, #newCategory, #newItem, #newPrice, #editCategory, #editItem, #editPrice,
     #userEmail, #family, #userPassword, #firstName, #lastName, #newEmail, #newPassword, #newFirstName,
     #newLastName, #newFamily, #newRole, #editEmail, #editPassword, #editFirstName, #editLastName,
-    #editFamily, #editRole {
+    #editFamily, #editRole, #newFamilyName, #editFamilyName {
         width: 340px;
     }
 }
