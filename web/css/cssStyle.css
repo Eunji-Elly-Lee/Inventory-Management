@@ -37,7 +37,7 @@ th, td {
 }
 
 #email, #password, #newCategory, #newItem, #newPrice, #editCategory, #editItem, #editPrice,
-#newFamilyName, #editFamilyName {
+#newFamilyName, #editFamilyName, #newCategoryName, #editCategoryName {
     width: 300px;
     display: inline-block;
 }
@@ -90,7 +90,7 @@ th, td {
     #email, #password, #newCategory, #newItem, #newPrice, #editCategory, #editItem, #editPrice,
     #userEmail, #family, #userPassword, #firstName, #lastName, #newEmail, #newPassword, #newFirstName,
     #newLastName, #newFamily, #newRole, #editEmail, #editPassword, #editFirstName, #editLastName,
-    #editFamily, #editRole, #newFamilyName, #editFamilyName {
+    #editFamily, #editRole, #newFamilyName, #editFamilyName, #newCategoryName, #editCategoryName {
         width: 340px;
     }
 }
