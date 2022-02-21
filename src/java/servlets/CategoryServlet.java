@@ -17,7 +17,7 @@ import services.InventoryService;
 /**
  * The Servlet for the managing category page.
  * @author Eunji Elly Lee
- * @version Feb 12, 2022
+ * @version Feb 21, 2022
  */
 public class CategoryServlet extends HttpServlet {
     @Override
