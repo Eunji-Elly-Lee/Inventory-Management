@@ -8,7 +8,7 @@ import models.*;
 /**
  * The java file of a service layer for managing all activities related to an inventory.
  * @author Eunji Elly Lee
- * @version Jan 31, 2022
+ * @version Feb 21, 2022
  */
 public class InventoryService {
     public Item getItem(int itemID) throws Exception {
@@ -16,6 +16,13 @@ public class InventoryService {
         Item item = itemDB.get(itemID);
         
         return item;
+    }
+    
+    public Category getCategory(int categoryID) throws Exception {
+        CategoryDB categoryDB = new CategoryDB();
+        Category category = categoryDB.get(categoryID);  
+        
+        return category;
     }
     
     public List<Category> getAllCategories() throws Exception {
@@ -66,5 +73,20 @@ public class InventoryService {
         } else {
             itemDB.delete(item);
         }
+    }
+    
+    public void insertCategory(String categoryName) throws Exception {
+        CategoryDB categoryDB = new CategoryDB();
+        Category category = new Category(0, categoryName);
+        
+        categoryDB.insert(category);
+    }
+    
+    public void updateCategory(int categoryID, String categoryName) throws Exception {
+        CategoryDB categoryDB = new CategoryDB();
+        Category category = categoryDB.get(categoryID);  
+        category.setCategoryName(categoryName);
+        
+        categoryDB.update(category);
     }
 }
