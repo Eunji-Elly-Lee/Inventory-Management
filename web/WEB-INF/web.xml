@@ -8,6 +8,10 @@
         <filter-name>AdminFilter</filter-name>
         <filter-class>filters.AdminFilter</filter-class>
     </filter>
+    <filter>
+        <filter-name>SystemAdminFilter</filter-name>
+        <filter-class>filters.SystemAdminFilter</filter-class>
+    </filter>
     <filter-mapping>
         <filter-name>AuthenticationFilter</filter-name>
         <servlet-name>InventoryServlet</servlet-name>
@@ -38,6 +42,14 @@
     </filter-mapping>
     <filter-mapping>
         <filter-name>AdminFilter</filter-name>
+        <servlet-name>CategoryServlet</servlet-name>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>SystemAdminFilter</filter-name>
+        <servlet-name>FamilyServlet</servlet-name>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>SystemAdminFilter</filter-name>
         <servlet-name>CategoryServlet</servlet-name>
     </filter-mapping>
     <servlet>
