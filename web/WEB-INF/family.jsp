@@ -1,6 +1,6 @@
 <%-- 
     Document   : The management family page where a system adminstrator can create a new family, call and edit a family.
-    Created on : Feb 13, 2022
+    Created on : Feb 21, 2022
     Author     : Eunji Elly Lee
 --%>
 
@@ -125,7 +125,7 @@
 
                     <form action="family" method="POST">
                         <div class="row my-3">
-                            <label class="form_label2" for="editFamilyName">Name::</label>
+                            <label class="form_label2" for="editFamilyName">Name:</label>
                             <input type="text" class="form-control" id="editFamilyName" name="editFamilyName"
                                     value="${editFamilyName}" <c:if test="${isNotEditing}">disabled</c:if>>
                         </div>                        
