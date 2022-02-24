@@ -10,6 +10,7 @@ A regular user can only manage their items and accounts. A family administrator 
 - Highlight of green that stands out but does not cause fatigue
 - Fully responsive website across all devices
 - Restrictions on page entry according to role authority
+- Running Apache Tomcat server in NetBeans
 
 ## Used skills
 - HTML, CSS, and Bootstrap
@@ -18,4 +19,3 @@ A regular user can only manage their items and accounts. A family administrator 
 - JavaMail
 - Model-View-Controller Pattern and Filter
 - MySQL, JDBC driver, and JPA library
-- Running Apache Tomcat server in NetBeans
