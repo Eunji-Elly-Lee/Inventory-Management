@@ -5,7 +5,9 @@
 This is a simple web application designed to allow users to register, modify, and delete home items from their accounts.
 
 Users are divided into three roles: a regular user, a family administrator, a system administrator.
-A regular user can only manage their items and accounts. A family administrator can manage their family members' accounts. A system administrator can manage not only all users' account but also family units and item categories.
+1. A regular user can only manage their items and accounts.
+2. A family administrator can manage their family members' accounts.
+3. A system administrator can manage not only all users' account but also family units and item categories.
 
 ## Features
 - Warm and bright mood from light green
