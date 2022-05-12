@@ -1,6 +1,6 @@
 ![main page](/img/main.png)
-![main page](/img/user_inventory.png)
-![main page](/img/admin_inventory.png)
+![inventory page](/img/user_inventory.png)
+![admin page](/img/admin_inventory.png)
 
 This is a simple web application designed to allow users to register, modify, and delete home items from their accounts.
 
