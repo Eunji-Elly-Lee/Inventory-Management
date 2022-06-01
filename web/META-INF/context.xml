@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context path="/InventoryManagement">
     <Resource
-        name="jdbc/inventorydb"
+        name=""
         url="" 
         username=""
         password=""
