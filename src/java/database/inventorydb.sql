@@ -70,39 +70,3 @@ CREATE TABLE IF NOT EXISTS `inventorydb`.`item` (
     FOREIGN KEY (`owner`)
     REFERENCES `inventorydb`.`user` (`email`)
     ON DELETE CASCADE);
-
-INSERT INTO `role` VALUES (1, 'system admin');
-INSERT INTO `role` VALUES (2, 'regular user');
-INSERT INTO `role` VALUES (3, 'family admin');
-
-INSERT INTO `category` (`category_name`) VALUES ('kitchen');
-INSERT INTO `category` (`category_name`) VALUES ('washroom');
-INSERT INTO `category` (`category_name`) VALUES ('living room');
-INSERT INTO `category` (`category_name`) VALUES ('basement');
-INSERT INTO `category` (`category_name`) VALUES ('bedrooom');
-INSERT INTO `category` (`category_name`) VALUES ('garage');
-INSERT INTO `category` (`category_name`) VALUES ('office');
-INSERT INTO `category` (`category_name`) VALUES ('other');
-
-INSERT INTO `family` (`family_name`) VALUES ('SYSTEM');
-INSERT INTO `family` (`family_name`) VALUES ('RED');
-INSERT INTO `family` (`family_name`) VALUES ('BLUE');
-
-INSERT INTO `user` (`email`,`active`,`first_name`,`last_name`,`password`,`family`,`role`)
-	VALUES ('cprg.352d+admin@gmail.com', true, 'Admin', 'Admin', 'password', 1, 1);
-INSERT INTO `user` (`email`,`active`,`first_name`,`last_name`,`password`,`family`,`role`)
-	VALUES ('cprg.352d+admin2@gmail.com', true, 'Admin2', 'Admin2', 'password', 2, 3);
-INSERT INTO `user` (`email`,`active`,`first_name`,`last_name`,`password`,`family`,`role`)
-	VALUES ('cprg.352d+anne@gmail.com', true, 'Anne', 'Annerson', 'password', 2, 2);
-INSERT INTO `user` (`email`,`active`,`first_name`,`last_name`,`password`,`family`,`role`)
-	VALUES ('cprg.352d+barb@gmail.com', true, 'Barb', 'Barber', 'password', 2, 2);
-INSERT INTO `user` (`email`,`active`,`first_name`,`last_name`,`password`,`family`,`role`)
-	VALUES ('cprg.352d+admin3@gmail.com', true, 'Admin3', 'Admin3', 'password', 3, 3);
-INSERT INTO `user` (`email`,`active`,`first_name`,`last_name`,`password`,`family`,`role`)
-	VALUES ('cprg.352d+elly@gmail.com', true, 'Elly', 'Lee', 'password', 3, 2);
-
-INSERT INTO `item` (`category`,`item_name`,`price`,`owner`) VALUES (1, 'blender', 29.99, 'cprg.352d+anne@gmail.com');
-INSERT INTO `item` (`category`,`item_name`,`price`,`owner`) VALUES (1, 'toaster', 19.99, 'cprg.352d+anne@gmail.com');
-INSERT INTO `item` (`category`,`item_name`,`price`,`owner`) VALUES (3, 'lamp', 5, 'cprg.352d+anne@gmail.com');
-INSERT INTO `item` (`category`,`item_name`,`price`,`owner`) VALUES (6, 'winter tires', 200, 'cprg.352d+anne@gmail.com');
-INSERT INTO `item` (`category`,`item_name`,`price`,`owner`) VALUES (5, 'dresser', 50, 'cprg.352d+anne@gmail.com');
