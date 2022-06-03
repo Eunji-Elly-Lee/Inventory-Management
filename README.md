@@ -25,3 +25,4 @@ Users are divided into three roles: a regular user, a family administrator, a sy
 - JavaMail
 - Model-View-Controller Pattern and Filter
 - MySQL, JDBC driver, and JPA library
+- AWS
