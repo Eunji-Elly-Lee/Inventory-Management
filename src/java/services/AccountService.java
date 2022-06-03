@@ -7,7 +7,7 @@ import models.*;
 /**
  * The java file of a service layer for managing all activities related to an account.
  * @author Eunji Elly Lee
- * @version Feb 12, 2022
+ * @version June 3, 2022
  */
 public class AccountService {
     public User login(String email, String password) {
@@ -143,7 +143,7 @@ public class AccountService {
             tags.put("link", link);
             
             insertUser(email, firstName, lastName, password, familyID, roleID, uuid);
-            GmailService.sendMail(to, subject, template, tags);
+            JavaMailService.sendMail(to, subject, template, tags);
         } catch(Exception e) {}
     }
     
@@ -170,7 +170,7 @@ public class AccountService {
                 tags.put("lastname", afterUser.getLastName());
                 tags.put("link", link);
 
-                GmailService.sendMail(to, subject, template, tags);
+                JavaMailService.sendMail(to, subject, template, tags);
                 return true;
             } else {
                 return false;
@@ -201,7 +201,7 @@ public class AccountService {
             afterUser.setUuid(uuid);
             userDB.update(beforeUser, afterUser);
             
-            GmailService.sendMail(to, subject, template, tags);
+            JavaMailService.sendMail(to, subject, template, tags);
         } catch(Exception e) {}
     }
     
