@@ -4,7 +4,7 @@
 
 This is a simple web application designed to allow users to register, modify, and delete home items from their accounts.
 
-#### [View Application](http://3.96.237.87:8080/InventoryManagement/)
+#### [View Application](http://3.96.237.87:8080/Inventory-Management/)
 
 Users are divided into three roles: a regular user, a family administrator, a system administrator.
 1. A regular user can only manage their items and accounts.
@@ -16,13 +16,13 @@ Users are divided into three roles: a regular user, a family administrator, a sy
 - Highlight of green that stands out but does not cause fatigue
 - Fully responsive website across all devices
 - Restrictions on page entry according to role authority
-- Running Apache Tomcat server in NetBeans
+- Created using NetBeans
 
 ## Used skills
 - HTML, CSS, and Bootstrap
 - Java Servlet and JSP
-- JavaBeans and JSTL
+- JPA, JavaBeans, and JSTL
 - JavaMail
 - Model-View-Controller Pattern and Filter
-- MySQL, JDBC driver, and JPA library
-- AWS
+- MySQL and JDBC driver
+- AWS and Apache Tomcat
