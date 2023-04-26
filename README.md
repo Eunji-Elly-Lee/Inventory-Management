@@ -4,7 +4,7 @@
 
 This is a simple web application designed to allow users to register, modify, and delete home items from their accounts.
 
-#### [View Application](http://3.96.237.87:8080/Inventory-Management/)
+#### [View Application](https://sorry-updating.netlify.app/)
 
 Users are divided into three roles: a regular user, a family administrator, a system administrator.
 1. A regular user can only manage their items and accounts.
