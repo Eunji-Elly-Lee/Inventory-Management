@@ -4,8 +4,7 @@
 ![inventory page](/img/user_inventory.png)
 ![admin page](/img/admin_inventory.png)
 
-This web application empowers users to manage their household inventories, fostering organization and simplifying daily life. <br />
-It provides a user-friendly interface for registering, modifying, and deleting home items, catering to various user roles within a household or family unit.
+This web application empowers users to manage their household inventories, fostering organization and simplifying daily life. It provides a user-friendly interface for registering, modifying, and deleting home items, catering to various user roles within a household or family unit.
 
 ### User Roles and Access Control
 
