@@ -1,41 +1,58 @@
-## Inventory Management Web Application
+# Home Inventory Management System
 
-![main page](/img/main.png)
-![inventory page](/img/user_inventory.png)
-![admin page](/img/admin_inventory.png)
+A responsive web application for managing household inventory items with role-based access control. <br />
+Built with Java Servlet, JSP, JPA, and MySQL.
 
-This web application empowers users to manage their household inventories, fostering organization and simplifying daily life. It provides a user-friendly interface for registering, modifying, and deleting home items, catering to various user roles within a household or family unit.
+가정 내 물품을 효율적으로 관리할 수 있는 반응형 웹 애플리케이션입니다. <br />
+사용자 역할 기반으로 접근 권한이 제어되며, Java Servlet, JSP, JPA, MySQL을 활용하여 개발되었습니다.
 
-### User Roles and Access Control
+## 💡 Overview
 
-The application implements a robust role-based access control system, enabling distinct functionalities for various user types:
+Users can manage personal or shared household items through a role-based system. <br />
+Admins can oversee family units and system-wide data, while each user maintains their own inventory.
 
-- **Regular User**: Manages their personal inventory items and account details
-- **Family Administrator**: Manages accounts of family members within their family unit
-- **System Administrator**: Possesses comprehensive control, overseeing all user accounts, family units, and item categories, ensuring seamless system management
+사용자는 개인 또는 공동 가정용 물품을 역할 기반 시스템을 통해 관리할 수 있으며, 관리자는 전체 가족 구성원과 시스템 전체 데이터를 총괄할 수 있습니다. <br />
+각 사용자는 자신만의 인벤토리를 보유하며 독립적으로 관리할 수 있습니다.
 
-### Features
+## 👤 User Features
 
-- **Inviting Interface**: A warm and bright atmosphere is created through a light green color scheme, fostering a positive user experience. This green strikes a balance between visibility and user comfort.
-- **Responsive Design**: The application seamlessly adapts to any device, ensuring a consistent and optimal user experience across desktop computers, tablets, and smartphones.
-- **Secured Access**: Granular access controls prevent unauthorized actions. Users can only access functionalities aligned with their designated role.
+- Add, update, and delete personal inventory items <br />
+  개인 물품 등록, 수정, 삭제 기능
+- View item categories by room (e.g., kitchen, bedroom) <br />
+  공간(예: 주방, 침실)별 분류된 물품 확인
+- Secure login and account management <br />
+  로그인 및 계정 정보 보안 관리
+- Responsive layout across desktop and mobile <br />
+  데스크탑 및 모바일 대응 반응형 레이아웃
 
-### Technologies Used
+## 🛠 Admin Features
 
-The application was created using NetBeans, and it leverages the following technologies:
+- Manage family member accounts and shared inventory <br />
+  가족 구성원 계정 및 공유 인벤토리 관리
+- System-wide control of users, categories, and families <br />
+  사용자, 공간 카테고리, 가족 단위에 대한 전반적인 관리
+- Role-based permissions and secure access <br />
+  역할 기반 권한 부여 및 보안 접근 제어
 
-**Front-End**:
+## 🖼 Screenshots
 
-- HTML, CSS, and Bootstrap: Used for creating the user interface and ensuring a visually appealing design
+<details>
+<summary>Click to view</summary>
 
-**Back-End**:
+![Main Page](/img/main.png)  
+![User Inventory Page](/img/user_inventory.png)  
+![Admin Dashboard](/img/admin_inventory.png)
 
-- Java Servlet and JSP: Used for handling server-side logic and generating dynamic content
-- JPA, JavaBeans, and JSTL: Used for managing data persistence, handling JavaBeans for server-side logic, and incorporating JSP Standard Tag Library for simplifying the development of JSP pages
-- JavaMail: Integrated for sending emails for various purposes within the application
-- Model-View-Controller (MVC) Pattern and Filter: Adopted for organizing the application's structure and implementing pre-processing logic
-- MySQL and JDBC Driver: Utilized for interacting with the database, managing data, and executing SQL queries
+</details>
 
-<br />
+## 🧰 Tech Stack
 
-This readme file provides a comprehensive overview of the Inventory Management web application. For further details or inquiries, feel free to reach out!
+| Category     | Tech                               |
+| ------------ | ---------------------------------- |
+| Frontend     | HTML, CSS, Bootstrap               |
+| Backend      | Java Servlet, JSP, JavaBeans, JSTL |
+| Architecture | MVC Pattern, Filters               |
+| Data Access  | JPA, JDBC                          |
+| Email        | JavaMail                           |
+| Database     | MySQL                              |
+| IDE          | NetBeans                           |
